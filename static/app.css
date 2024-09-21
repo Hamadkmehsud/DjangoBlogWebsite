@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+#main-navigation {
+  width: 100%;
+  height: 4.1rem;                     /* Adjust height as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;                   /* Adjust padding for side spacing */
+  position: absolute;                /* Make sure this works with your layout */
+  top: 0;
+  left: 0;
+  background-color: #333;           /* Example background color */
+}
+
+#main-navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 1.5rem;             /* Add padding for links */
+  transition: color 0.3s;           /* Smooth transition for hover effect */
+}
+
+#main-navigation a:hover,
+#main-navigation a:active {
+  color: #cf79f1;                   /* Hover color */
+}
+
+#main-navigation h1 a:hover,
+#main-navigation h1 a:active {
+  color: white;                     /* Keep h1 link white on hover */
+}
